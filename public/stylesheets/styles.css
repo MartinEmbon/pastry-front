@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:wght@100;400;500;700&display=swap');
+
+:root {
+    --header: #1db8fb;
+    --principal: #06092b;
+    --bannerCategoria: #1db8fb;
+    --button: #1aacea;
+    --footer: #030519;
+    --secondary: #eee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: #f1eee6;
+    font-size: 20px;
+    color: #000;
+}
+
+header{
+    max-width: 960px;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}
+
+.se-hacen {
+    width: 80%;
+    text-align:center;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    position:relative;
+}
+
+.se-hacen::after {
+    content:"";
+    position:absolute;
+    top:100%;    
+    width: 10%;
+    height: 5px;    
+    background-color: black;
+}
+.se-hacen h3 {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(1.325rem + 1.2vw);
+}
+
+
+.se-hacen p {
+    margin-bottom: 1rem;
+    font-size: 20px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 80px;
+    
+}
+.se-hacen p:last-child {
+    margin-bottom: 2rem;        
+}
+
+.asi-mesmo {
+    display:flex;
+    justify-content: center !important;
+    flex: 0 0 auto;
+    width: 83.3333333333%;
+    margin:3rem auto;
+}
+
+.asi-mesmo .imagen-mesmo {
+    padding: 30px;
+    width: 50%;
+    flex:0 0 auto;
+}
+
+.asi-mesmo .imagen-mesmo img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.queimadinhas {
+    display:flex;
+    justify-content: center !important;
+    margin:auto;
+    width: 83.3333333333%;
+    margin-top: 30px;
+}
+
+.imagen-queima {
+    padding: 30px;
+    width: 50%;
+    flex:0 0 auto;
+}
+
+.imagen-queima img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.queima-content {
+    padding: 30px;
+}
+.queima-content h2{
+    font-size: 2.1rem;
+}
+
+.queima-content p {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+/*LOJAS*/
+.lojas {
+    display:flex;
+    justify-content: center !important;
+    margin:auto;
+    width: 100%;
+    margin-top: 30px;
+    background-color: #fff;
+    margin-top: 60px;
+    
+}
+
+.loja-container {
+    padding: 80px 0;
+    display:flex;
+    justify-content: center !important;
+    align-items: center;
+    width: 83.3333333333%;
+}
+
+.imagen-loja {
+    padding: 30px;
+    width: 50%;
+    flex:0 0 auto;
+}
+
+.imagen-loja img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.loja-content {
+    padding: 30px;
+    text-align: center;
+    position:relative;    
+}
+.loja-content h2{
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 25px;
+    margin: 30px 0;
+    font-size:calc(1.3rem + .6vw);
+    
+}
+
+.loja-content h2::before{
+    content:"\f276";
+    font-family: "FontAwesome";
+    position:absolute;
+    left:50%;
+    top:0;    
+    font-size: 50px;    
+}
+
+.loja-content h4{  
+    color: #000;
+    font-size: 16px;
+    max-width: 450px;    
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    display: table;
+    width: auto;
+    margin: 30px auto;
+}
+
+.loja-content input {
+    border: 2px solid #000;
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px 15px;
+    height: 2.5rem;
+}
+
+/*REDES*/
+.redes {
+    display:flex;
+    justify-content: center !important;
+    flex-direction:column;    
+    width: 100%;
+    margin:auto;
+    margin-top:35px;
+    margin-bottom: 5rem;
+}
+
+
+.redes-content {
+    text-align:center;
+    display:flex;
+    justify-content: center;    
+    align-items: center;    
+    font-size: 50px;
+    width: 83.3333333333%;
+    margin:auto;
+    padding: 30px;
+}
+
+.redes-content i {
+    margin-right: 2rem;
+}
+
+.imagen-redes {    
+    width: 50%;
+    flex:0 0 auto;
+    display:flex;
+    margin:auto;
+    justify-content: center;    
+    
+}
+
+.imagen-redes img {
+    max-width: 50%;
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+
+
+

@@ -1,0 +1,49 @@
+/*Inicio Slide Principal*/
+
+
+.main-slide{
+    margin: 0 0 40px 0;
+    
+}
+.slider-principal {
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto    ;
+    height:400px;
+    object-fit: contain;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    
+}
+
+
+.slider-image {
+    position: relative;
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.slider-1 {
+    background-image: url("/images/slider-natal.jpg");
+    background-position: 50%;
+}
+
+.slider-2 {
+    background-image: url("/images/slider-natal-2.jpg");        
+}
+
+.slider-3 {
+    background-image: url("/images/slider-natal-2.jpg");
+    background-position: 10%;
+}
+

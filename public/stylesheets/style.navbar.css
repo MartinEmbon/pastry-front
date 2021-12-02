@@ -1,0 +1,180 @@
+header {
+    width: 100vw;        
+}
+
+.headerTitle {
+    width: 100%;
+    background-color: var(--header);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerTitle p {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.headerTitle img {
+    max-width: 30px;
+    height: auto;
+}
+
+/* Inicio navbar */
+
+.mainHeader {
+    width: 100%;        
+    position:fixed;
+    top:0;
+    left:0;    
+    z-index:99;
+}
+
+.navbar {
+    display: flex;
+    background:#f1eee6;
+    align-items: center;
+    justify-content: space-around;
+    color: white;    
+    padding: 0 15px;
+}
+
+.brand-title {    
+    max-width: 250px;
+}    
+
+.brand-title img {
+    max-width: 50%;    
+    min-width: 100px;
+}
+
+.navbar-links ul {
+/*    margin: 0.3rem;
+margin-top: 40px;    
+padding: 0;
+    display: flex;   */
+    
+    margin-top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: auto;
+    
+    transition: all .3s;
+}
+
+.navbar-links {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.navbar-links li {
+    display: inline;
+    list-style-type: none;
+    margin: 15px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    padding: 1rem;
+    color: #000;
+    font-weight: 400;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.navbar-links li a:hover {
+    color:#b59153;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 4.8rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width:930px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 110px;
+        left: -100%;
+        transition: all 1s ease;
+        background-color: white;
+        z-index: 10;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        transition: all 1s ease;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+        color: black;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        position: absolute;
+        left: -0;
+        transition: all 1s ease;
+    }
+
+    .mainHeader {
+        flex: 0 1 0%;
+    }
+
+    .secondHeader:not(.lupa){
+        justify-content: center;        
+        width: 70%;
+        margin:auto;
+    }
+    
+}
+
+@media screen and (max-width:530px){
+    .loginIcon{
+        display:none;        
+    }
+    .search i{
+        display:none;
+    }
+    .search {
+        width: 90%;
+    }
+    .searchInput {
+        width: 100%;
+    }
+    .login, .checkout {
+        display:block;
+    }
+}
